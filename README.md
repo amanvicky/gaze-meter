@@ -1,5 +1,7 @@
 # gaze-meter
 
+[![CI](https://github.com/amanvicky/gaze-meter/actions/workflows/ci.yml/badge.svg)](https://github.com/amanvicky/gaze-meter/actions/workflows/ci.yml)
+
 Attention analytics from a webcam: blinks per minute, how much of the time your gaze left the lens, and a focus score. The measurement half of the OpenBroadcast gaze family — [Open-Broadcast](https://github.com/amanvicky/Open-Broadcast) *corrects* your gaze, this one *scores* it.
 
 ```bash
