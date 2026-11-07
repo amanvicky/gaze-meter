@@ -23,8 +23,10 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
 
-      - name: Install pytest
-        run: pip install pytest
+      - name: Install package + pytest
+        run: |
+          pip install -e .
+          pip install pytest
 
       - name: Tests
         run: pytest tests/ -q
