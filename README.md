@@ -9,7 +9,9 @@ $ python gaze_meter.py --simulate --seconds 60
 1800 frames  |  blinks 15 (15.0/min)  |  off-center 29.9%  |  focus score 70/100
 ```
 
-That run is synthetic and deterministic (a blink every 4 s, a look-away for 6 of every 20 frames) — which is why the numbers land right where the pattern says. `--simulate` exists so the metrics are testable without a camera, and so you can sanity-check the tool before pointing it at your face.
+![gaze-meter in a terminal — two deterministic simulate runs](docs/gaze-meter-simulate.png)
+
+Every run above is synthetic and deterministic (a blink every 4 s, a look-away for 6 of every 20 frames) — which is why the numbers land right where the pattern says: 15.0 blinks/min and a 30 % look-away pattern read out as 29.9 %. `--simulate` exists so the metrics are testable without a camera, and so you can sanity-check the tool before pointing it at your face.
 
 ## Metrics
 
